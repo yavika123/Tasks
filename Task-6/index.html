@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+<div class="header">
+    <h1>Interactive Form</h1>
+    <p>Submit Your details Using the form below.</p>
+</div>
+<div class="head"> 
+  <div class="form-container">
+    <form id="userForm">
+      <h2 style="text-align: center; color: #007bff;">User Registration</h2>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your Username" required><br>
+      <span class="error-message" id="usernameError"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your Username">
+      <span class="error-message" id="emailError"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your Password" name="password" required>
+      <span class="error-message" id="passwordError"></span>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Enter Your confirmPassword" required>
+      <span class="error-message" id="confirmPasswordError"></span>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</div>  
+</body>
+</html>
