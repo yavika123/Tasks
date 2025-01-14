@@ -20,3 +20,8 @@
     font-size: 1em;
     color:#333;
 }
+#buttonWrapper {
+    display: flex;           
+    justify-content: center; 
+    align-items: center; 
+}   

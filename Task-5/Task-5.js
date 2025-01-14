@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () =>{
-    fetchPosts();
+    const button = document.getElementById('buttonClick');
+    button.addEventListener('click', fetchPosts);
 });
 function fetchPosts(){
     fetch('https://jsonplaceholder.typicode.com/posts')
